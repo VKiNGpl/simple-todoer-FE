@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo App: De-coupled!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="shared.js"></script>
+    <script src="single.js"></script>
+  </head>
+  <body class="container">
+    <nav class="navbar navbar-light">
+      <a href="index.html" class="btn btn-light" type="button">All</a>
+      <form class="form-inline flex-row-reverse">
+        <div class="">
+          <a href="" type="button" class="btn btn-outline-warning" id="editBtn">Update</a>
+          <a type="button" class="btn btn-outline-danger deleteBtn">
+            Remove
+          </a>
+        </div>
+      </form>
+    </nav>
+    <div class="card text-center">
+      <div class="card-header">
+        <h4>
+            <div id="title" class="col-sm"></div>
+        </h4>
+        <span class="badge badge-pill badge-info" id="priority"></span>
+      </div>
+      <div class="card-body">
+        <p class="card-text" id="description"></p>
+        <form class="form">
+          <a type="button" class="btn btn-outline-success deleteBtn">
+            Complete
+          </a>
+        </form>
+      </div>
+      <div class="card-footer text-muted" id="date"></div>
+    </div>
+  </body>
+</html>
