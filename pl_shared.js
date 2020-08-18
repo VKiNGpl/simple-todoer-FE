@@ -1,0 +1,29 @@
+const API_URL = 'https://simple-todoer.herokuapp.com/api/v1/todo'; // this is the endpoint where the 'todos' are
+
+function getIdFromQuery() {
+    const parsedParts = window.location.search.split('=');
+    const id = parsedParts[1];
+    return id;
+}
+
+function getOne(id) {
+    return $.get(`${API_URL}/${id}`);
+}
+
+function getTodoFromForm() {
+    const title = $('#title').val();
+        const description = $('#description').val();
+        const priority = $('#priority').val();
+
+        const todo = {
+            title,
+            description,
+            priority
+        };
+
+        return todo;
+}
+
+function redirectById(id) {
+    window.location = `/todoer/pl_single.html?id=${id}`;
+}

@@ -1,34 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Todo App: De-coupled!</title>
+    <title>DoZrobienia!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="shared.js"></script>
+    <script src="pl_shared.js"></script>
     <script src="edit.js"></script>
 </head>
 <body class="container">
     <div class="alert alert-danger" role="alert" id="errorMessage" style="display: none;"></div>
     <nav class="navbar navbar-light">
-        <a href="index.html" class="btn btn-light" type="button">All</a>
+        <a href="pl_index.html" class="btn btn-light" type="button">Wszystkie</a>
     </nav>
     <form class="form">
         <div>
-            <label for="title">Title</label>
+            <label for="title">Nazwa</label>
             <input type="text" class="form-control" id="title" placeholder="Enter a todo" name="title">
             <p class="help-block"></p>
         </div>
         <div class="form-group">
-            <label for="description">Description</label>
+            <label for="description">Opis</label>
             <textarea type="text" id="description" class="form-control" placeholder="Enter a description"
                 aria-describedby="helpId" name="description"></textarea>
         </div>
         <div class="form-group">
-            <label for="Priority">Priority</label>
+            <label for="Priority">Priorytet</label>
             <select class="form-control" id="priority" name="priority">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -38,7 +38,7 @@
             </select>
         </div>
         <button type="submit" class="btn btn-outline-success">
-            Update
+            Zaktualizuj
         </button>
     </form>
 </body>

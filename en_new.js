@@ -6,7 +6,7 @@ $(() => {
 
     $.post(API_URL, todo)
       .then(() => {
-        window.location = '/';
+        window.location = '/todoer/en_index.html';
       })
       .catch((error) => {
         const $errorMessage = $('#errorMessage');

@@ -6,15 +6,15 @@
     <link rel="shortcut icon" href="">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Todo App: De-coupled!</title>
+    <title>Simple ToDoer!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="shared.js"></script>
-    <script src="new.js"></script>
+    <script src="en_shared.js"></script>
+    <script src="edit.js"></script>
 </head>
 <body class="container">
     <div class="alert alert-danger" role="alert" id="errorMessage" style="display: none;"></div>
     <nav class="navbar navbar-light">
-        <a href="index.html" class="btn btn-light" type="button">All</a>
+        <a href="en_index.html" class="btn btn-light" type="button">All</a>
     </nav>
     <form class="form">
         <div>
@@ -30,15 +30,15 @@
         <div class="form-group">
             <label for="Priority">Priority</label>
             <select class="form-control" id="priority" name="priority">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
         <button type="submit" class="btn btn-outline-success">
-            Create
+            Update
         </button>
     </form>
 </body>

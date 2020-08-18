@@ -8,7 +8,7 @@ $(() => {
     $('#priority').text(`Priority: ${todo.priority}`);
     $('#description').text(todo.description);
     $('#date').text(`Created: ${todo.date}`);
-    $('#editBtn').attr('href', `/edit.html?id=${todo.id}`);
+    $('#editBtn').attr('href', `/todoer/en_edit.html?id=${todo.id}`);
   });
 
   $('.deleteBtn').click(deleteTodo);
@@ -19,7 +19,7 @@ $(() => {
       dataType: 'json',
       url: `${API_URL}/${id}`,
     }).then(() => {
-      window.location = '/';
+      window.location = '/todoer/en_index.html';
     });
   }
 });

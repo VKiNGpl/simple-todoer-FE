@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/api/v1/todo'; // this is the endpoint where the 'todos' are
+const API_URL = 'https://simple-todoer.herokuapp.com/api/v1/todo'; // this is the endpoint where the 'todos' are
 
 function getIdFromQuery() {
     const parsedParts = window.location.search.split('=');
@@ -25,5 +25,5 @@ function getTodoFromForm() {
 }
 
 function redirectById(id) {
-    window.location = `/single.html?id=${id}`;
+    window.location = `/todoer/en_single.html?id=${id}`;
 }
