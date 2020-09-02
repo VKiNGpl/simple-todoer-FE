@@ -4,11 +4,35 @@ body {
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   }
   
-  .btn {
+.btn {
     margin-top: 1em;
-  }
+}
   
-  a {
+a {
     color: #00B7FF;
-  }
+}
   
+.priority1 {
+  background-color: rgba(255, 20, 20, 0.767);
+  margin-bottom: 5px;
+}
+  
+.priority2 {
+  background-color: rgba(226, 137, 64, 0.767);
+  margin-bottom: 5px;
+}
+  
+.priority3 {
+  background-color: rgba(231, 231, 89, 0.788);
+  margin-bottom: 5px;
+}
+  
+.priority4 {
+  background-color: rgba(144, 238, 144, 0.904);
+  margin-bottom: 5px;
+}
+  
+.priority5 {
+  background-color: rgba(173, 216, 230, 0.801);
+  margin-bottom: 5px;
+}

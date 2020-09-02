@@ -5,7 +5,7 @@ $(() => {
   // make a get request to get the todo
   getOne(id).then((todo) => {
     $('#title').text(todo.title);
-    $('#priority').text(`Priority: ${todo.priority}`);
+    $('#priority').text(`Priority: ${todo.priority}`).addClass(`priority${todo.priority}`);
     $('#description').text(todo.description);
     $('#date').text(`Created: ${todo.date}`);
     $('#editBtn').attr('href', `/todoer/en_edit.html?id=${todo.id}`);
